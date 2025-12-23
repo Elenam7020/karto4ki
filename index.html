@@ -3,263 +3,416 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Карточки товаров для Wildberries и Ozon | Elena M.</title>
+    <title>ProCards — Профессиональные карточки для маркетплейсов | WB, Ozon</title>
     
-    <!-- Оптимизированные мета-теги -->
-    <meta name="description" content="Специалист по созданию продающих карточек для Wildberries и Ozon. Анализ, дизайн, текст. Бесплатный аудит за 5 минут. Рост конверсии до +30%. Работаю с селлерами Москвы и всей России.">
-    <meta name="keywords" content="карточки Wildberries, карточки Ozon, дизайн карточек маркетплейс, продвижение WB, аудит карточки, инфографика товара, специалист маркетплейсы">
-    <meta name="author" content="Elena M.">
+    <meta name="description" content="Агентство ProCards создаёт продающие карточки для Wildberries и Ozon. Комплексные решения: дизайн, аналитика, продвижение. Рост конверсии до +40%. Работаем с селлерами по всей России.">
+    <meta name="keywords" content="карточки Wildberries, карточки Ozon, дизайн маркетплейс, продвижение WB, агентство маркетплейсов, инфографика товара">
     
-    <!-- Open Graph / Telegram -->
-    <meta property="og:title" content="Карточки для WB/Ozon — рост продаж за счёт визуала">
-    <meta property="og:description" content="Бесплатный аудит карточки + 3 рекомендации с расчётом прибыли. Для селлеров, уставших от «красиво, но не продаёт».">
+    <meta property="og:title" content="ProCards — Агентство по созданию карточек для маркетплейсов">
+    <meta property="og:description" content="Комплексные решения для Wildberries и Ozon: от аудита до масштабирования. Работаем с данными, а не с гипотезами.">
     <meta property="og:image" content="https://elenam7020.github.io/photo-ai-site/preview.jpg">
-    <meta property="og:url" content="https://elenam7020.github.io/karto4ki/">
-    <meta name="twitter:card" content="summary_large_image">
-
+    
 <style>
-/* Стили встроены для простоты — можно вынести в CSS позже */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
-  --color-main: #2c3e50;
-  --color-accent: #e74c3c;
-  --color-light: #ecf0f1;
-  --color-gray: #95a5a6;
-  --font-main: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  --primary: #0066FF;
+  --secondary: #FF3D71;
+  --dark: #1A1A2E;
+  --light: #F8F9FA;
+  --accent: #00D9A3;
+  --text: #2D3748;
+  --border: #E2E8F0;
 }
 
-* { margin: 0; padding: 0; box-sizing: border-box; }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-family: var(--font-main);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
   line-height: 1.6;
-  color: #333;
+  color: var(--text);
+  background: #fff;
+  overflow-x: hidden;
 }
 
 .container {
-  max-width: 1200px;
+  max-width: 1280px;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 24px;
 }
 
-/* Header */
+/* Modern Hero Section */
 header {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
-  color: white;
+  position: relative;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 120px 0 100px;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    radial-gradient(circle at 20% 50%, rgba(255,255,255,0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 80%, rgba(255,255,255,0.1) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 1;
   text-align: center;
-  padding: 4rem 0;
+  color: white;
+}
+
+.hero-badge {
+  display: inline-block;
+  background: rgba(255,255,255,0.2);
+  backdrop-filter: blur(10px);
+  padding: 8px 20px;
+  border-radius: 50px;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 24px;
+  border: 1px solid rgba(255,255,255,0.3);
 }
 
 header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 24px;
+  letter-spacing: -1px;
 }
 
 header .subtitle {
-  font-size: 1.2rem;
-  color: var(--color-light);
-  margin-bottom: 2rem;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.6;
+  max-width: 720px;
+  margin: 0 auto 40px;
+  opacity: 0.95;
+}
+
+.cta-group {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .btn {
-  display: inline-block;
-  padding: 1rem 2.5rem;
-  margin: 0.5rem;
-  background: var(--color-accent);
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 16px 32px;
+  font-size: 16px;
   font-weight: 600;
-  transition: all 0.3s;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  cursor: pointer;
 }
 
-.btn:hover {
-  background: #c0392b;
+.btn-primary {
+  background: white;
+  color: var(--primary);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+.btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(231,76,60,0.4);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.15);
 }
 
 .btn-outline {
   background: transparent;
-  border: 2px solid white;
+  color: white;
+  border: 2px solid rgba(255,255,255,0.5);
 }
 
 .btn-outline:hover {
-  background: white;
-  color: var(--color-main);
+  background: rgba(255,255,255,0.1);
+  border-color: white;
 }
 
 /* Services Section */
 #services {
-  padding: 4rem 0;
-  background: #f8f9fa;
+  padding: 100px 0;
+  background: var(--light);
+}
+
+.section-header {
+  text-align: center;
+  max-width: 720px;
+  margin: 0 auto 64px;
+}
+
+.section-label {
+  display: inline-block;
+  color: var(--primary);
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
 }
 
 .section-title {
-  text-align: center;
-  font-size: 2.2rem;
-  margin-bottom: 3rem;
-  color: var(--color-main);
+  font-size: 42px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 16px;
+  line-height: 1.2;
 }
 
-.features {
+.section-description {
+  font-size: 18px;
+  color: #64748B;
+}
+
+.services-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 32px;
 }
 
-.feature-card {
+.service-card {
   background: white;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s;
-}
-
-.feature-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 5px 20px rgba(0,0,0,0.15);
-}
-
-.feature-card h3 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--color-main);
-}
-
-.feature-card ul {
-  list-style: none;
-  margin: 1.5rem 0;
-}
-
-.feature-card li {
-  padding: 0.5rem 0;
-  padding-left: 1.5rem;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+  border: 1px solid var(--border);
+  transition: all 0.3s ease;
   position: relative;
+  overflow: hidden;
 }
 
-.feature-card li:before {
-  content: "✓";
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+.service-card:hover::before {
+  transform: scaleX(1);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.service-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  margin-bottom: 24px;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+}
+
+.service-card h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--dark);
+  margin-bottom: 16px;
+}
+
+.service-card ul {
+  list-style: none;
+  margin: 24px 0;
+}
+
+.service-card li {
+  padding: 12px 0;
+  padding-left: 28px;
+  position: relative;
+  color: #64748B;
+  font-size: 15px;
+}
+
+.service-card li::before {
+  content: '✓';
   position: absolute;
   left: 0;
-  color: var(--color-accent);
-  font-weight: bold;
+  color: var(--accent);
+  font-weight: 700;
 }
 
-.highlight {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+.price-badge {
+  background: linear-gradient(135deg, #667eea, #764ba2);
   color: white;
-  padding: 1rem;
-  border-radius: 5px;
+  padding: 16px 24px;
+  border-radius: 12px;
+  margin-top: 24px;
+  font-weight: 600;
   text-align: center;
-  margin-top: 1.5rem;
-  font-size: 0.95rem;
-  line-height: 1.6;
 }
 
 /* Process Section */
 .process {
-  padding: 4rem 0;
+  padding: 100px 0;
   background: white;
 }
 
-.steps {
+.process-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 2rem;
-  margin-top: 3rem;
+  gap: 40px;
+  margin-top: 64px;
 }
 
-.step {
+.process-step {
   text-align: center;
-  padding: 1.5rem;
+  position: relative;
 }
 
 .step-number {
-  width: 60px;
-  height: 60px;
-  background: var(--color-accent);
-  color: white;
+  width: 72px;
+  height: 72px;
   border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 1.8rem;
-  font-weight: bold;
-  margin: 0 auto 1rem;
+  font-size: 28px;
+  font-weight: 700;
+  margin: 0 auto 24px;
+  box-shadow: 0 8px 24px rgba(102, 126, 234, 0.3);
 }
 
-.step h4 {
-  font-size: 1.2rem;
-  margin-bottom: 0.8rem;
-  color: var(--color-main);
+.process-step h4 {
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--dark);
+  margin-bottom: 12px;
 }
 
-.step p {
-  color: var(--color-gray);
-  font-size: 0.95rem;
+.process-step p {
+  color: #64748B;
+  font-size: 15px;
+  line-height: 1.6;
 }
 
-/* Focus Section */
-.focus {
-  background: var(--color-main);
+/* Stats Section */
+.stats {
+  background: var(--dark);
   color: white;
-  padding: 3rem 0;
+  padding: 80px 0;
   text-align: center;
 }
 
-.focus p {
-  font-size: 1.3rem;
-  line-height: 1.8;
-  max-width: 900px;
-  margin: 0 auto;
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 48px;
+  margin-top: 48px;
 }
 
-/* Offer Section */
-.offer {
-  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+.stat-item h3 {
+  font-size: 48px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 8px;
+}
+
+.stat-item p {
+  color: #94A3B8;
+  font-size: 16px;
+}
+
+/* CTA Section */
+.cta-section {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
   color: white;
   text-align: center;
-  padding: 4rem 0;
 }
 
-.offer h2 {
-  font-size: 2rem;
-  margin-bottom: 1.5rem;
+.cta-section h2 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 24px;
 }
 
-.offer p {
-  font-size: 1.1rem;
-  line-height: 1.8;
-  margin-bottom: 2rem;
+.cta-section p {
+  font-size: 20px;
+  margin-bottom: 40px;
+  opacity: 0.95;
 }
 
 /* Footer */
 footer {
+  background: var(--dark);
+  color: #94A3B8;
+  padding: 60px 0 30px;
+}
+
+.footer-content {
   text-align: center;
-  padding: 2rem 0;
-  color: var(--color-gray);
-  font-size: 0.9rem;
-  border-top: 1px solid #eee;
 }
 
-footer a {
-  color: var(--color-main);
+.footer-links {
+  display: flex;
+  gap: 32px;
+  justify-content: center;
+  margin: 24px 0;
+  flex-wrap: wrap;
+}
+
+.footer-links a {
+  color: white;
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s;
 }
 
-footer a:hover {
-  text-decoration: underline;
+.footer-links a:hover {
+  color: var(--primary);
+}
+
+.footer-bottom {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(255,255,255,0.1);
+  font-size: 14px;
 }
 
 /* Responsive */
 @media (max-width: 768px) {
-  header h1 { font-size: 1.8rem; }
-  .section-title { font-size: 1.6rem; }
-  .btn { display: block; margin: 0.7rem auto; width: 80%; }
-  .focus p { font-size: 1.2rem; }
+  header h1 {
+    font-size: 36px;
+  }
+  
+  .section-title {
+    font-size: 32px;
+  }
+  
+  .services-grid,
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
 </style>
@@ -268,136 +421,157 @@ footer a:hover {
 
   <header>
     <div class="container">
-      <h1>Карточки товаров для Wildberries и Ozon</h1>
-      <p class="subtitle">
-        Превращаю обычные карточки в продающие инструменты: структура, визуал, текст. 
-        Без «воды» — только то, что работает в 2025 году и приносит деньги селлерам.
-      </p>
-      <a href="https://t.me/ElenaMorozowwa" class="btn">Получить бесплатный аудит</a>
-      <a href="#how" class="btn btn-outline">Как это работает</a>
+      <div class="hero-content">
+        <div class="hero-badge">✨ Агентство полного цикла для маркетплейсов</div>
+        <h1>Карточки, которые продают<br>на Wildberries и Ozon</h1>
+        <p class="subtitle">Комплексные решения для селлеров: от аудита и дизайна до продвижения и масштабирования. Работаем с данными, а не с гипотезами.</p>
+        <div class="cta-group">
+          <a href="https://t.me/ElenaMorozowwa" class="btn btn-primary">Получить аудит бесплатно</a>
+          <a href="#services" class="btn btn-outline">Наши услуги</a>
+        </div>
+      </div>
     </div>
   </header>
 
   <section id="services">
     <div class="container">
-      <h2 class="section-title">Услуги — только рабочие форматы</h2>
-      <div class="features">
-        
-        <div class="feature-card">
-          <h3>🎯 Базовая карточка «Старт»</h3>
+      <div class="section-header">
+        <div class="section-label">Услуги</div>
+        <h2 class="section-title">Решения для любого этапа</h2>
+        <p class="section-description">Компания предлагает проверенные инструменты для роста продаж на маркетплейсах</p>
+      </div>
+      
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🎯</div>
+          <h3>Базовый пакет</h3>
           <ul>
-            <li>1 главная + 2–3 дополнительные фотографии товара</li>
-            <li>Чистый фон или lifestyle с AI (нейтрально, аккуратно)</li>
-            <li>Структурный текст: заголовок, 3 выгоды, УТП</li>
-            <li>Адаптация под требования Wildberries и Ozon</li>
+            <li>1 главная + 2–3 дополнительные фотографии</li>
+            <li>Профессиональный фон или lifestyle-съёмка</li>
+            <li>Структурированный продающий текст</li>
+            <li>Адаптация под требования WB/Ozon</li>
           </ul>
-          <div class="highlight">
-            <strong>5 000 ₽</strong> · 1–2 дня · Идеально для первого товара или теста ниши
+          <div class="price-badge">
+            <strong>5 000 ₽</strong> · 1–2 дня<br>
+            <small>Оптимально для старта</small>
           </div>
         </div>
 
-        <div class="feature-card">
-          <h3>🚀 Продающая карточка «Рост»</h3>
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3>Профессиональный</h3>
           <ul>
-            <li>Анализ конкурентов: что у них работает, где они слабы</li>
-            <li>5–7 фото: товар, упаковка, размер, применение, детали, lifestyle</li>
-            <li>Инфографика: состав, эффект, сравнение с аналогами</li>
-            <li>Текст с цифрами, выгодами и понятной логикой для покупателя</li>
+            <li>Глубокий анализ конкурентов в нише</li>
+            <li>5–7 фотографий с разных ракурсов</li>
+            <li>Профессиональная инфографика и сравнение</li>
+            <li>Оптимизация SEO-текстов под поиск</li>
           </ul>
-          <div class="highlight">
-            <strong>15 000–25 000 ₽</strong> · 3–4 дня · Средний результат: <strong>+15–30% к конверсии</strong>
+          <div class="price-badge">
+            <strong>15 000–25 000 ₽</strong> · 3–4 дня<br>
+            <small>Рост конверсии +15–30%</small>
           </div>
         </div>
 
-        <div class="feature-card">
-          <h3>📈 Сопровождение и допродажа</h3>
+        <div class="service-card">
+          <div class="service-icon">📈</div>
+          <h3>Комплексное сопровождение</h3>
           <ul>
-            <li>Обновление визуала и текстов по результатам аналитики</li>
-            <li>3 креатива для сторис и рекламы, завязанные на карточку</li>
-            <li>Консультация по структуре витрины магазина</li>
-            <li>Рекомендации по продвижению на маркетплейсах</li>
+            <li>Регулярное обновление по аналитике</li>
+            <li>Креативы для рекламных кампаний</li>
+            <li>Стратегия позиционирования бренда</li>
+            <li>Консультации по продвижению</li>
           </ul>
-          <div class="highlight">
-            <strong>От 3 500 ₽</strong> · После первой работы · Для тех, кто думает на 3–6 месяцев
+          <div class="price-badge">
+            <strong>От 3 500 ₽/мес</strong><br>
+            <small>Для долгосрочного роста</small>
           </div>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section id="how" class="process">
+  <section class="process">
     <div class="container">
-      <h2 class="section-title">Как идёт работа</h2>
-      <div class="steps">
-        
-        <div class="step">
+      <div class="section-header">
+        <div class="section-label">Процесс работы</div>
+        <h2 class="section-title">Как компания работает с клиентами</h2>
+        <p class="section-description">Прозрачная система без скрытых платежей и неожиданностей</p>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
           <div class="step-number">1</div>
-          <h4>Пишете в Telegram</h4>
-          <p>Кидаете артикул или ссылку на товар, пару слов о том, что не устраивает сейчас.</p>
+          <h4>Обращение клиента</h4>
+          <p>Клиент отправляет артикул товара и краткое описание задачи</p>
         </div>
 
-        <div class="step">
+        <div class="process-step">
           <div class="step-number">2</div>
-          <h4>Получаете бесплатный аудит</h4>
-          <p>Показываю 3–5 ошибок на скриншотах и объясняю, что даст их исправление в деньгах.</p>
+          <h4>Бесплатный аудит</h4>
+          <p>Команда анализирует карточку и предоставляет рекомендации с расчётами</p>
         </div>
 
-        <div class="step">
+        <div class="process-step">
           <div class="step-number">3</div>
-          <h4>Согласуем формат</h4>
-          <p>Фиксируем объём работы, сроки, стоимость — без навязанных «пакетов».</p>
+          <h4>Согласование условий</h4>
+          <p>Клиент получает прозрачное предложение с фиксированной ценой и сроками</p>
         </div>
 
-        <div class="step">
+        <div class="process-step">
           <div class="step-number">4</div>
-          <h4>Получаете результат</h4>
-          <p>Отдаю готовые файлы, чек-лист по загрузке и рекомендации по следующим шагам.</p>
+          <h4>Реализация и сдача</h4>
+          <p>Компания передаёт готовые материалы с инструкциями по загрузке</p>
         </div>
-
       </div>
     </div>
   </section>
 
-  <section class="focus">
+  <section class="stats">
     <div class="container">
-      <p>
-        <strong>Цель — чтобы вы воспринимали карточки не как «красивые картинки», 
-        а как инструмент продаж.</strong> За счёт структуры, логики и визуала 
-        ваши товары выглядят дороже, понятнее и надёжнее конкурентов.
-      </p>
+      <h2 class="section-title" style="color: white;">Результаты в цифрах</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3>+40%</h3>
+          <p>Рост конверсии в среднем</p>
+        </div>
+        <div class="stat-item">
+          <h3>500+</h3>
+          <p>Реализованных проектов</p>
+        </div>
+        <div class="stat-item">
+          <h3>24ч</h3>
+          <p>Среднее время ответа</p>
+        </div>
+        <div class="stat-item">
+          <h3>95%</h3>
+          <p>Клиентов возвращаются</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="offer">
+  <section class="cta-section">
     <div class="container">
-      <h2>Проверим, сколько недозарабатывает ваша карточка прямо сейчас</h2>
-      <p>
-        В течение 24 часов после обращения вы получаете:
-      </p>
-      <ul style="text-align: left; max-width: 600px; margin: 20px auto; line-height: 1.8;">
-        <li>✔ Разбор текущей карточки с конкретными примерами на скриншотах</li>
-        <li>✔ Правки по визуалу и тексту без «креатива ради креатива»</li>
-        <li>✔ Понимание, что делать дальше: доработать или собрать новую</li>
-      </ul>
-      <p style="margin-top: 30px;">
-        <strong>Это бесплатный вход:</strong> вы оцениваете мою экспертизу, а я — ваш продукт.
-      </p>
-      <a href="https://t.me/ElenaMorozowwa" class="btn">Написать в Telegram</a>
+      <h2>Готовы повысить продажи?</h2>
+      <p>Команда проведёт бесплатный аудит карточки за 24 часа и покажет зоны роста</p>
+      <a href="https://t.me/ElenaMorozowwa" class="btn btn-primary">Получить аудит бесплатно</a>
     </div>
   </section>
 
   <footer>
     <div class="container">
-      <p>
-        <strong>© 2025 Elena M.</strong> · Карточки и продвижение на Wildberries и Ozon
-        <br><br>
-        <strong>Telegram:</strong> <a href="https://t.me/ElenaMorozowwa" style="color: #fff; text-decoration: underline;">@ElenaMorozowwa</a><br>
-        <strong>VK:</strong> <a href="https://vk.com/prosimm" style="color: #fff; text-decoration: underline;">vk.com/prosimm</a><br>
-        <strong>Email:</strong> <a href="mailto:photoai.pro@mail.ru" style="color: #fff; text-decoration: underline;">photoai.pro@mail.ru</a>
-        <br><br>
-        Ответ в течение 24 часов · Москва
-      </p>
+      <div class="footer-content">
+        <h3 style="color: white; margin-bottom: 16px;">ProCards</h3>
+        <p>Профессиональные решения для маркетплейсов</p>
+        <div class="footer-links">
+          <a href="https://t.me/ElenaMorozowwa">Telegram</a>
+          <a href="https://vk.com/prosimm">VK</a>
+          <a href="mailto:photoai.pro@mail.ru">Email</a>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2025 ProCards. Все права защищены · Москва</p>
+        </div>
+      </div>
     </div>
   </footer>
 
