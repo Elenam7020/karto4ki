@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://elenam7020.github.io/karto4ki/sitemap.xml
